@@ -11,7 +11,7 @@ class RestaurantsController < ApplicationController
   def create
     @restaurant = Restaurant.new(restaurant_params) #restaurant is thee model name here because restaurant is based on model
     @restaurant.save
-    redirect_to restaurants_path(@restaurant)
+    redirect_to restaurant_path(@restaurant)
   end
 
   def show
